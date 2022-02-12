@@ -1,0 +1,18 @@
+spring:
+  profiles:
+    active: prod
+---
+# Coloque aqui suas configurações de Desenvolvimento
+spring:
+  profiles: prod
+  datasource:
+    hikari:
+      jdbc-url: jdbc:mysql://localhost:3308/teste
+      username: root
+      password:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+
+---
+# Coloque aqui suas configurações de Homologação
+spring:
+  profiles: homo
